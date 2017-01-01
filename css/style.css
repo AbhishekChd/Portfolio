@@ -55,7 +55,8 @@ header{
     background-size: cover;
 }
 .clear-div{
-    clear: both;
+    clear: both !important;
+    display: table;
 }
 .image{
     width: auto;
@@ -174,8 +175,7 @@ h2{
     padding: 1%;
 }
 .desc{
-    padding-left: 30px;
-    padding-right:30px;
+    padding:30px 1%;
     word-spacing: 5px;
     text-align: justify;
     height: inherit;
@@ -212,9 +212,10 @@ social-button-pallete a{
 /*===============================*/
 #projects{
 
-    height: 100%;
+ height: 100%;
     width: 100%;
     overflow: hidden;
+    padding-top: 40px;
 }
 .project-img{
     width: 100%;
@@ -248,7 +249,62 @@ figure{
     text-align: center;
     background-color: rgba(33, 33, 33, 0.76);
 }
-
-.row a{
+#projects .row a{
     color:#FFF;
+}
+
+/*===============================*/
+/*      INTRODUCTION SECTION     */
+/*===============================*/
+footer{
+}
+footer .connect{
+    background-color: #d9d9d9;
+}
+footer .connect i,footer .links .credit-links i{
+    text-decoration: none;
+    padding: 1% 2%;
+    border-radius: 5px;
+    font-size:200%;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+}
+footer .links .credit-links i{
+    border-top: 3px solid transparent;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    transition: 0.3s;
+}
+footer .connect i:hover{
+    background-color: #BDBDBD;
+}
+footer .links .credit-links i:hover{
+    border: 3px solid #FF5722;
+}
+footer .connect i:hover{
+    border-bottom: 3px solid #FF5722;
+}
+footer .links{
+    color: #fff;
+    height: auto;
+    background-color:#212121;
+}
+footer .links .credit{
+    text-align: center;
+    padding: 50px 0 20px 0;
+    width:100%;
+    height: auto;
+}
+footer .links .credit-links,footer .connect{
+    padding: 10px;
+    text-align: center;
+    height: auto;
+    color: #fff;
+    font-size: 120%;
+
+}
+footer .links a{
+    text-decoration: none;
+    color: #2196F3;
+    font-size: 100%;
 }
