@@ -26,6 +26,23 @@ html{
     font-size: 18px;
     text-rendering: optimizeLegibility;
 }
+/*===============================*/
+/*        MEADIA QUERIES         */
+/*===============================*/
+@media only screen and (max-width:660px){
+    #item-portfolio,#item-project,#item-contact{
+        display: none;
+    }
+}
+@media only screen and (min-width:660px){
+    #item-portfolio,#item-project,#item-contact{
+        display: inline;
+    }
+    #menu{
+        display: none;
+    }
+
+}
 
 /*===============================*/
 /*       REUSABLE COMPONENTS     */
@@ -83,14 +100,19 @@ h2{
     background-color: rgba(33, 33, 33, 0.56);
     width: 100%;
     height:80px;
-    left:50%;
 }
 .fixed-nav{
     width: 100%;
     position: fixed;
+    top:0;
+    left: 0;
+    z-index: 1;
 }
-.main-nav li{
-float: right;
+.full-nav{
+    overflow: hidden;
+}
+.full-nav li{
+    float: right;
     margin: 30px;
     list-style: none;
     display:inline-block;
@@ -99,17 +121,23 @@ float: right;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
-.main-nav a:link,.main-nav a:visited{
+.full-nav a:link,.full-nav a:visited{
     text-decoration:none;
     color: #fff;
     padding: 3px;
     border-bottom: 2px solid transparent;
     transition: border-bottom 0.2s;
 }
-.main-nav a:hover,.main-nav a:active{
+.full-nav a:hover,.full-nav a:active{
     text-decoration:none;
     color: #fff;
     border-bottom: 2px solid  #ff5722;
+}
+#menu{
+    position: absolute;
+    right: 15px;
+    top: 20px;
+    font-size: 180%;
 }
 /*--------Editing intro box $NAME$  ----------*/
 .intro-box{
