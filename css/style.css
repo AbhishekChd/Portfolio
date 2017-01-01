@@ -91,10 +91,15 @@ h2{
 /*===============================*/
 .logo{
     margin-top: 10px;
-    margin-left: 10px;
+    margin-left: 5px;
     float: left;
     height:60px;
     width: auto;
+    border-bottom: 2.5px solid transparent;
+    transition: 0.3s;
+}
+.logo:hover{
+    border-bottom: 2.5px solid #FF5722;
 }
 /*--------Editing main navigation bar----------*/
 .main-nav{
